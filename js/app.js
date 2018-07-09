@@ -89,3 +89,30 @@ function matchCards(card1, card2) {
  myFuncCalls = myFuncCalls + 1;
  $('.moves').html(myFuncCalls);
 }
+
+/*
+Function unmatchCards that executes the following:
+Adds CSS class 'no' to perform animation on cards that have not matched
+Adds CSS class 'unmatch' to show the cards have matched
+Remove class 'no', 'unmatch', 'open' and 'show' to reset the cards to their original position after 600ms
+Increment moves by 1
+Shows winning modal if matchedCards fill the grid
+*/
+function unmatchCards(card1, card2) {
+ card1.parent().addClass('no');
+ card2.parent().addClass('no');
+ card1.addClass('unmatch');
+ card2.addClass('unmatch');
+ setTimeout(function(){
+   card1.parent().removeClass('no');
+   card2.parent().removeClass('no');
+   card1.removeClass('unmatch');
+   card2.removeClass('unmatch');
+ }, 600);
+ setTimeout(function(){
+   card1.removeClass('open show');
+   card2.removeClass('open show');
+ }, 600);
+ myFuncCalls = myFuncCalls + 1;
+ $('.moves').html(myFuncCalls);
+}
