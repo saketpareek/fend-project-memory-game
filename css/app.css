@@ -29,6 +29,24 @@
   }
 }
 
+/* Media queries for deck and card sizes on smaller screen */
+
+@media(max-width: 450px){
+  .deck {
+    height: 65vh !important;
+    padding: 20px !important;
+  }
+  .deck .card {
+    height: 11.2vh !important;
+  }
+}
+
+@media(max-width: 767px){
+  .carddiv {
+    padding: 8px !important;
+  }
+}
+
 html {
     box-sizing: border-box;
 }
