@@ -187,3 +187,24 @@ function gameTimer() {
     x = setInterval(currTimer,1000);
   }
 }
+
+/*
+Function showModal that executes the following:
+- If seconds is equal to 0, it shows the losing modal with modalanimation class
+- If seconds is greater then zero, check if all cards have been matched, if yes, show winModal with winning modal paragraph
+*/
+
+function showModal() {
+  if (seconds === 0) {
+    clearInterval(x);
+    $('#loseModal').addClass('modalanimation');
+    $('#loseModal').modal('show');
+  } if (seconds > 0) {
+      if (matchedCards.length === 16) {
+        clearInterval(x);
+        $('.modal-para').html('With ' + myFuncCalls + ' moves and ' + starsCount + ' stars <br> Woooohoooo!!!');
+        $('#winModal').addClass('modalanimation');
+        $('#winModal').modal('show');
+      }
+  }
+}
