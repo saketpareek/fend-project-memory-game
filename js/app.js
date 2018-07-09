@@ -44,3 +44,18 @@ cards = shuffle(cards);
  *    + increment the move counter and display it on the page (put this functionality in another function that you call from this one)
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
+
+
+ /*
+Create arrays and variables as follows:
+- Let x,
+- Array OpenList tht contains the currently open cards,
+- Array matchedCards tht contains all the matched cards,
+- Let myFuncCalls initialized to 0,
+- Let lock initialized to false,
+- Let seconds initialized to 60,
+- Let previousTarget set to NULL,
+- Let movesCounter set to NULL,
+- Let starsCount set to 3
+*/
+ let x, openList = [], matchedCards = [], myFuncCalls = 0, lock = false, seconds = 60, previousTarget = null, movesCounter = null, starsCount = 3;
