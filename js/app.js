@@ -1,7 +1,8 @@
 /*
  * Create a list that holds all of your cards
  */
-
+ let cards = [];
+ cards = $('.deck').find('i');
 
 /*
  * Display the cards on the page
