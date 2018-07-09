@@ -57,12 +57,14 @@ html {
     box-sizing: inherit;
 }
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -70,16 +72,14 @@ body {
     font-family: 'Coda', cursive;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 54px;
+}
+
+.main-heading, .score-panel{
+  font-family: 'Bungee Inline', cursive;
 }
 
 /*
