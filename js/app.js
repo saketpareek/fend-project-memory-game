@@ -208,3 +208,9 @@ function showModal() {
       }
   }
 }
+
+// Function restart that refreshes the page upon clicking restart from the score-panel, close and play gain button from modal
+
+$('.restart, .close, .btn').on('click', function restart() {
+  location.reload(true);
+});
