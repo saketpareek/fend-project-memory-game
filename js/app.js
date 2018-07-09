@@ -66,3 +66,9 @@ Create arrays and variables as follows:
    $(evt).find('i').css('transform', 'rotateY(180deg)');
    $(evt).addClass('open show');
  }
+
+
+ // Preventing inner element of card to bubble up
+  $('.deck').find('i').on('click',function(event){
+   event.stopPropagation();
+ })
