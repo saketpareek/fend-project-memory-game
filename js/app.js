@@ -173,17 +173,17 @@ Function gameTimer that executes the following:
 */
 
 function gameTimer() {
-function currTimer() {
-  $('.countdowndiv').text('00:' + --seconds);
-  if (seconds < 10) {
-    $('.countdowndiv').text('00:0' + seconds);
-    $('.countdowndiv').addClass('deadline');
+  function currTimer() {
+    $('.countdowndiv').text('00:' + --seconds);
+    if (seconds < 10) {
+      $('.countdowndiv').text('00:0' + seconds);
+      $('.countdowndiv').addClass('deadline');
+    }
+    showModal();
+   }
+  if (!lock) {
+    lock = true;
+    currTimer();
+    x = setInterval(currTimer,1000);
   }
-  showModal();
- }
-if (!lock) {
-  lock = true;
-  currTimer();
-  x = setInterval(currTimer,1000);
-}
 }
