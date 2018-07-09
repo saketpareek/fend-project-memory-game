@@ -12,10 +12,10 @@ The project consist of HTML, CSS and javaScript files modified from the starter 
 
 To get started,
 
-'''
+```
 $ git clone https://github.com/saketpareek/fend-project-memory-game.git
 Open any text editor and run the code in google chrome or any other browser
-'''
+```
 
 For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
