@@ -59,3 +59,10 @@ Create arrays and variables as follows:
 - Let starsCount set to 3
 */
  let x, openList = [], matchedCards = [], myFuncCalls = 0, lock = false, seconds = 60, previousTarget = null, movesCounter = null, starsCount = 3;
+
+
+ // Displays cards symbol
+ function displayCard(evt) {
+   $(evt).find('i').css('transform', 'rotateY(180deg)');
+   $(evt).addClass('open show');
+ }
