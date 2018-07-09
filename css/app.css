@@ -198,3 +198,127 @@ h1 {
     float: right;
     cursor: pointer;
 }
+
+/* Modal styles */
+
+.modal-full {
+  min-width: 100%;
+  margin: 0;
+}
+
+.modal-content {
+  border: 0;
+  min-height: 100vh;
+  border-radius: 0;
+}
+
+.modal {
+  padding: 0;
+}
+
+.modal {
+   padding-right: 0px !important;
+}
+
+.modal-header {
+  margin: 0 auto;
+}
+
+.modal-title {
+  font-size: 4.5em;
+}
+
+.close {
+  font-weight: normal;
+  font-size: 5rem;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.modal-body {
+  padding-top: 0.5rem;
+}
+
+.no {
+  animation: no 0.5s 1 ease;
+}
+
+.yes {
+  animation: yes 0.5s 1 ease;
+}
+
+@keyframes no {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes yes {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-10px);
+  }
+
+  40% {
+    transform: translateY(10px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modalanimation {
+  animation: modalanimation 0.7s 1 ease;
+}
+
+@keyframes modalanimation {
+  0% {
+    transform: scale(0.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
