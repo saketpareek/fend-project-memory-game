@@ -116,3 +116,8 @@ function unmatchCards(card1, card2) {
  myFuncCalls = myFuncCalls + 1;
  $('.moves').html(myFuncCalls);
 }
+
+// function empties array that resets the value of openList array to 0
+function emptyArray() {
+ openList.length = 0;
+}
