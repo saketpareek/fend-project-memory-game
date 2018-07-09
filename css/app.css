@@ -88,7 +88,7 @@ h1 {
 
 .deck {
     width: 660px;
-    min-height: 680px;
+    height: 92.5vh;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
     padding: 32px;
     border-radius: 10px;
@@ -98,11 +98,13 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 3em;
+    max-width: 100%;
+    perspective: 800px;
 }
 
 .deck .card {
-    height: 125px;
     width: 125px;
+    height: 16.7vh;
     background: #2e3d49;
     font-size: 0;
     color: #ffffff;
@@ -112,10 +114,14 @@ h1 {
     justify-content: center;
     align-items: center;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .deck .card.open {
-    transform: rotateY(0);
+    transform: rotateY(180deg);
     background: #02b3e4;
     cursor: default;
 }
@@ -128,6 +134,42 @@ h1 {
     cursor: default;
     background: #02ccba;
     font-size: 33px;
+}
+
+.carddiv {
+  padding: 15px;
+}
+
+.deck .card.unmatch {
+  background: #B92727;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.score-panel .stars {
+    display: inline-block;
+    margin: 0 0.1rem 0 0;
+    padding-left: 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    cursor: pointer;
+}
+
+.deadline {
+  color : red;
 }
 
 /*
