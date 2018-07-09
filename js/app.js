@@ -165,3 +165,25 @@ $('.card').on('click',function(evt){
  previousTarget=this;
  return false;
 });
+
+/*
+Function gameTimer that executes the following:
+- Executes function currTimer that decrements seconds by 1 and if seconds reach less then 10, it shows the seconds text in red
+- When time is up, the showModal function is run
+*/
+
+function gameTimer() {
+function currTimer() {
+  $('.countdowndiv').text('00:' + --seconds);
+  if (seconds < 10) {
+    $('.countdowndiv').text('00:0' + seconds);
+    $('.countdowndiv').addClass('deadline');
+  }
+  showModal();
+ }
+if (!lock) {
+  lock = true;
+  currTimer();
+  x = setInterval(currTimer,1000);
+}
+}
