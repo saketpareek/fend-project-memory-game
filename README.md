@@ -14,13 +14,11 @@ To get started,
 
 ```
 $ git clone https://github.com/saketpareek/fend-project-memory-game.git
-Open any text editor and run the code in google chrome or any other browser
-```
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+Open text editor and run the code
+```
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This repository is the modified code by Saket Pareek. Pull requests are welcome.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
