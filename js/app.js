@@ -121,3 +121,47 @@ function unmatchCards(card1, card2) {
 function emptyArray() {
  openList.length = 0;
 }
+
+/*
+Function on clicking any card that executes the following:
+- If card is already opened, disable clicking on that card,
+- Starts function gameTimer to start the timer
+- Execute displayCard function to display the card that is clicked and add the card to openList array by executing addCard function
+- If clicked card is equal to NULL, then discard default action on card else check if previously clicked card is equal to the card clicked now, if yes, run function matchCards and empty openList and if no, run function unmatchCards and empty openList
+- Decrement stars from starsCount and add difefrent font awesome classes to stars when a number of moves have been executed
+*/
+$('.card').on('click',function(evt){
+ if($(this).hasClass('open')) {
+   return false;
+ }
+ gameTimer();
+ displayCard(evt.target);
+ addCard($(this));
+ if(this === previousTarget) {
+   evt.preventDefault();
+ } else {
+   for (var i=0; i<openList.length; i++) {
+     curr = $(openList[i]);
+     prev = $(openList[i-1]);
+   }
+   if (prev.html()) {
+     if (curr.html() === prev.html()) {
+       matchCards(prev, curr);
+       emptyArray();
+     }
+     else if (prev.html() !== curr.html()) {
+       unmatchCards(prev, curr);
+       emptyArray();
+     }
+   }
+ }
+ if (myFuncCalls >= 18) {
+   $('.stars').children('li:nth-child(3)').find('i').removeClass('fas').addClass('far');
+   starsCount = 2;
+ } if (myFuncCalls >=24) {
+   $('.stars').children('li:nth-child(2)').find('i').removeClass('fas').addClass('far');
+   starsCount = 1;
+ }
+ previousTarget=this;
+ return false;
+});
