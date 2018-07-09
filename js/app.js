@@ -68,7 +68,24 @@ function displayCard(evt) {
 }
 
 
- // Preventing inner element of card to bubble up
+// Preventing inner element of card to bubble up
 $('.deck').find('i').on('click',function(event){
   event.stopPropagation();
 });
+
+/*
+Function matchCards that executes the following:
+Adds CSS class 'yes' to perform animation on cards that have matched
+Adds CSS class 'match' to show the cards have matched
+Push matched cards to array matchedCards
+Increment moves by 1
+*/
+function matchCards(card1, card2) {
+ card1.parent().addClass('yes');
+ card2.parent().addClass('yes');
+ card1.addClass('match');
+ card2.addClass('match');
+ matchedCards.push(card1, card2);
+ myFuncCalls = myFuncCalls + 1;
+ $('.moves').html(myFuncCalls);
+}
