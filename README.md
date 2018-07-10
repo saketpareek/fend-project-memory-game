@@ -1,24 +1,48 @@
 # Memory Game Project
 Memory Game lets user match cards containing symbols within a given range of time. There are two cards for each symbol. If all 16 cards are matched within the timeframe, the user wins stating how many moves it took to win. If time is up with cards still unmatched, user loses the game.
 
-## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-
-## Instructions
-
-The project consist of HTML, CSS and javaScript files modified from the starter project with the help of bootstrap.
-
+## Getting Started
 To get started,
 
 ```
 $ git clone https://github.com/saketpareek/fend-project-memory-game.git
 
-Open text editor and run the code
+install Atom or any other code editor
+
 ```
 
-## Contributing
+## Prerequisites
+In order to run this, you need, 
 
-This repository is the modified code by Saket Pareek. Pull requests are welcome.
+- Code Editor (Atom / Sublime text or eqv)
+- Browser (Google chrome / mozilla firefox or eqv)
+
+
+## Installing
+Follow the steps below to get this project up and running on your system,
+
+- Open cloned project folder
+- Search for index.htm file
+- Open the file in any browser 
+
+or
+
+- Open any code editor (eg, atom)
+- Open cloned project folder in code editor
+- Run the code via atom live server package in atom
+
+## Built With
+
+- HTML
+- CSS 
+- jQuery
+- Bootstrap
+
+## Refrences 
+
+http://api.jquery.com/category/events/
+https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/
+
+
 
