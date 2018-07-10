@@ -45,8 +45,8 @@ Run the code via atom live server package in atom
 
 ## Refrences 
 
-http://api.jquery.com/category/events/
-https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/
+- http://api.jquery.com/category/events/
+- https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/
 
 
 
