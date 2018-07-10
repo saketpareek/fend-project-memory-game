@@ -24,25 +24,31 @@ Follow the steps below to get this project up and running on your system,
 
 ```
 Open cloned project folder
+
 Search for index.htm file
+
 Open the file in any browser 
+
 ```
 
 or
 
 ```
 Open any code editor (eg, atom)
+
 Open cloned project folder in code editor
+
 Run the code via atom live server package in atom
+
 ```
 
 ## Game Dependencies
 
-```
-Click on any card
-Match the card already opened by clicking on another card
-Match all 8 pairs of cards before time (1 minute) runs out
-```
+
+1. Click on any card
+2. Match the card already opened by clicking on another card
+3. Match all 8 pairs of cards before time (1 minute) runs out
+
 
 ## Built With
 
