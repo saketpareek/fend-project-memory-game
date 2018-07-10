@@ -54,7 +54,7 @@ Create arrays and variables as follows:
 - Let movesCounter set to NULL,
 - Let starsCount set to 3
 */
- let x, openList = [], matchedCards = [], myFuncCalls = 0, lock = false, seconds = 60, previousTarget = null, movesCounter = null, starsCount = 3;
+ let x, openList = [], matchedCards = [], myFuncCalls = 0, lock = false, seconds = 60, previousTarget = null, movesCounter = null, starsCount = 3, totaltime = 60;
 
 // Displays cards symbol
  function displayCard(evt) {
@@ -202,7 +202,7 @@ function showModal() {
   } if (seconds > 0) {
     if (matchedCards.length === 16) {
       clearInterval(x);
-      $('.modal-para').html('With ' + myFuncCalls + ' moves and ' + starsCount + ' stars <br> Woooohoooo!!!');
+      $('.modal-para').html('in ' + (totaltime - seconds) + ' seconds, ' + myFuncCalls + ' moves and ' + starsCount + ' stars <br> Woooohoooo!!!');
       $('#winModal').addClass('modalanimation');
       $('#winModal').modal('show');
     }
