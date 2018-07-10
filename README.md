@@ -1,20 +1,52 @@
 # Memory Game Project
+Memory Game lets user match cards containing symbols within a given range of time. There are two cards for each symbol. If all 16 cards are matched within the timeframe, the user wins stating how many moves it took to win. If time is up with cards still unmatched, user loses the game.
 
-## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## Getting Started
+To get started,
 
-## Instructions
+```
+$ git clone https://github.com/saketpareek/fend-project-memory-game.git
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+install Atom or any other code editor
 
-To get started, open `js/app.js` and start building out the app's functionality
+```
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## Prerequisites
+In order to run this, you need, 
 
-## Contributing
+- Code Editor (Atom / Sublime text or eqv)
+- Browser (Google chrome / mozilla firefox or eqv)
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## Installing
+Follow the steps below to get this project up and running on your system,
+
+```
+Open cloned project folder
+Search for index.htm file
+Open the file in any browser 
+```
+
+or
+
+```
+Open any code editor (eg, atom)
+Open cloned project folder in code editor
+Run the code via atom live server package in atom
+```
+
+## Built With
+
+- HTML
+- CSS 
+- jQuery
+- Bootstrap
+
+## Refrences 
+
+- http://api.jquery.com/category/events/
+- https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/
+
+
+
