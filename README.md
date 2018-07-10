@@ -36,6 +36,14 @@ Open cloned project folder in code editor
 Run the code via atom live server package in atom
 ```
 
+## Game Dependencies
+
+```
+Click on any card
+Match the card already opened by clicking on another card
+Match all 8 pairs of cards before time (1 minute) runs out
+```
+
 ## Built With
 
 - HTML
