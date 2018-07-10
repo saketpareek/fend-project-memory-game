@@ -23,17 +23,17 @@ In order to run this, you need,
 Follow the steps below to get this project up and running on your system,
 
 ```
-- Open cloned project folder
-- Search for index.htm file
-- Open the file in any browser 
+Open cloned project folder
+Search for index.htm file
+Open the file in any browser 
 ```
 
 or
 
 ```
-- Open any code editor (eg, atom)
-- Open cloned project folder in code editor
-- Run the code via atom live server package in atom
+Open any code editor (eg, atom)
+Open cloned project folder in code editor
+Run the code via atom live server package in atom
 ```
 
 ## Built With
